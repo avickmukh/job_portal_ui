@@ -1,0 +1,66 @@
+[
+ {
+  "id": 1,
+  "title": "Frontend Developer",
+  "company_id": 1,
+  "description": "Comfortable with modern JS stack, experience with React.",
+  "employment_type": "full_time"
+ },
+ {
+  "id": 2,
+  "title": "UI Developer",
+  "description": "Comfortable with modern JS stack, experience with React.",
+  "employment_type": "full_time"
+ },
+ {
+  "id": 3,
+  "title": "JAVA Developer",
+  "description": "Comfortable with modern JS stack, experience with React.",
+  "employment_type": "full_time"
+ },
+ {
+  "id": 4,
+  "title": "REACT (UI) Developer",
+  "description": "Comfortable with modern JS stack, experience with React.",
+  "employment_type": "full_time"
+ },
+ {
+  "id": 5,
+  "title": "SENIOR Frontend Developer",
+  "description": "Comfortable with modern JS stack, experience with React.",
+  "employment_type": "full_time"
+ },
+ {
+  "id": 6,
+  "title": "DEVOPS Developer",
+  "description": "Comfortable with modern JS stack, experience with React.",
+  "employment_type": "full_time"
+ },
+ {
+  "id": 7,
+  "title": "Frontend Developer",
+  "description": "Comfortable with modern JS stack, experience with React.",
+  "employment_type": "full_time"
+ },
+ {
+  "id": 8,
+  "title": "Frontend Developer",
+  "description": "Comfortable with modern JS stack, experience with React.",
+  "employment_type": "full_time"
+ },
+ {
+  "id": 9,
+  "title": "Frontend Developer",
+  "description": "Comfortable with modern JS stack, experience with React.",
+  "employment_type": "full_time"
+ },
+ {
+  "id": 10,
+  "title": "Software Developer - ASP.net and React 4+ years",
+  "company_id": 1,
+  "location": "Bangalore",
+  "skills":" javascript, css, asp.net, react",
+  "description": "Comfortable with modern JS stack, experience with React.",
+  "employment_type": "full_time"
+ }
+]
