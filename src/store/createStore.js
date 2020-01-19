@@ -1,8 +1,8 @@
 import { applyMiddleware, compose, createStore as createReduxStore } from 'redux'
 import createSagaMiddleware from 'redux-saga'
-const createHistory = require("history").createBrowserHistory;
 import makeRootReducer from './reducers'
 import { updateLocation } from './location'
+const createHistory = require('history').createBrowserHistory
 
 const sagaMiddleware = createSagaMiddleware()
 
@@ -51,7 +51,7 @@ export const createStore = (initialState = {}) => {
 }
 const sagas = []
 export const injectSaga = (saga) => {
-  if(sagas.indexOf(saga) === -1) {
+  if (sagas.indexOf(saga) === -1) {
     sagas.push(saga)
     sagaMiddleware.run(saga)
   }

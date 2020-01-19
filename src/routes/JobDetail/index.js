@@ -1,6 +1,6 @@
-import { injectReducer } from '../../store/reducers';
-import { injectSaga } from '../../store/createStore';
-import saga from './saga';
+import { injectReducer } from '../../store/reducers'
+import { injectSaga } from '../../store/createStore'
+import saga from './saga'
 
 export default (store) => ({
   path:'/job_detail/:id',

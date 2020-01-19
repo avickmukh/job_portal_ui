@@ -4,12 +4,11 @@ import { getJobList } from '../actions'
 import JobList from '../components/JobList'
 
 const mapDispatchToProps = {
-    getJobList
+  getJobList
 }
 
 const mapStateToProps = (state) => ({
-    
-})
 
+})
 
 export default connect(mapStateToProps, mapDispatchToProps)(JobList)

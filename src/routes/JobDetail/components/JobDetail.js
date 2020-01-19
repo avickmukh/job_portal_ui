@@ -2,21 +2,20 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 class JobDetail extends Component {
-  
 //   constructor(props){
 //     super(props)
 //   }
 
-  componentDidMount(){
-      this.props.getJobById(this.props.jobId);
+  componentDidMount () {
+    this.props.getJobById(this.props.jobId)
   }
 
-  render(){
-      return (
-              <div className="row no-gutters">
+  render () {
+    return (
+      <div className='row no-gutters'>
                  JOB Detail COMPONENT
-              </div>
-      )
+      </div>
+    )
   }
 }
 JobDetail.propTypes = {

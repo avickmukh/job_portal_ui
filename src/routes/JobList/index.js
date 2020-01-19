@@ -1,5 +1,6 @@
 import { injectReducer } from '../../store/reducers'
-
+import { injectSaga } from '../../store/createStore'
+import saga from './saga'
 
 export default (store) => ({
   path:'/',
@@ -16,7 +17,7 @@ export default (store) => ({
 
       /*  Add the reducer to the store on key 'counter'  */
       injectReducer(store, { key: 'joblist', reducer })
-
+      injectSaga(saga)
       /*  Return getComponent   */
       cb(null, joblist)
 
