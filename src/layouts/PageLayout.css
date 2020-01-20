@@ -1,0 +1,19 @@
+.page-layout__viewport {
+    padding-top: 4rem;
+  }
+  
+  .page-layout__nav-item--active {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .jobClass .card:hover {
+    border-bottom-color: #1c6beb;
+    border-bottom-width: 4px;
+  }
+
+  .detailJob .card{
+      background-color:transparent;
+      border:none;
+      margin-top:10px;
+  }

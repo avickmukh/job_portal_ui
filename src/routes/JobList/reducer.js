@@ -8,6 +8,7 @@ const ACTION_HANDLERS = {
   [actions.GET_JOB_LIST_SUCCESS]:(state, action) => {
     return {
       ...state,
+      jobs: action.payload.jobs,
       isLoading: false
     }
   },

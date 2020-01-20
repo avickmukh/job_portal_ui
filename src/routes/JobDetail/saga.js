@@ -1,22 +1,24 @@
 import { put, takeLatest } from 'redux-saga/effects'
-// import { NotificationManager} from 'react-notifications';
-
-import { getJobByIdSuccess, getJobByIdError } from './actions'
-// import { postDataAsync } from '../../apis/dataQuery'
-// import { getJobListUrl } from '../../apis/constants'
-
 import { GET_JOB_BY_ID } from './constants'
+import { getDataAsync } from '../../apis/dataQuery'
+import getJobDetailById from './utils'
+import { getJobByIdSuccess, getJobByIdError } from './actions'
 
 export function * getJobById (action) {
   try {
-    console.log(action.payload.jobId)
-        // const response = yield postDataAsync(loginBaseUrl, formData)
-    const response = { success:true }
-    if (response.success) {
-      yield put(getJobByIdSuccess([]))
-    } else {
-            // NotificationManager.error('Error message', response.error.message, 5000);
-    }
+        const response = yield getDataAsync()
+        if (response.success) {
+          const job = getJobDetailById(response.data, action.payload.jobId)
+          console.log(response.data, action.payload.jobId)
+          if(job.length > 0) {
+            yield put(getJobByIdSuccess(job[0]))
+          }
+          else{
+            yield put(getJobByIdError('There is no data'))
+          }
+        } else {
+          yield put(getJobByIdError('There is no data'))
+        }
   } catch (ex) {
     yield put(getJobByIdError(ex.message))
   }

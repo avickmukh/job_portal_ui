@@ -1,19 +1,17 @@
 import { put, takeLatest } from 'redux-saga/effects'
 
 import { getJobListSuccess, getJobListError } from './actions'
-// import { postDataAsync } from '../../apis/dataQuery'
-// import { getJobListUrl } from '../../apis/constants'
+import { getDataAsync } from '../../apis/dataQuery'
 
 import { GET_JOB_LIST } from './constants'
 
 export function * getJobList (action) {
   try {
-        // const response = yield postDataAsync(loginBaseUrl, formData)
-    const response = { success:true }
+    const response = yield getDataAsync()
     if (response.success) {
-      yield put(getJobListSuccess([]))
+      yield put(getJobListSuccess(response.data))
     } else {
-            // NotificationManager.error('Error message', response.error.message, 5000);
+      yield put(getJobListError('There is no data'))
     }
   } catch (ex) {
     yield put(getJobListError(ex.message))

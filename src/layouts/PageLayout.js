@@ -1,14 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Container } from 'reactstrap'
 import Header from './common/Header'
+import './PageLayout.css'
 
 export const PageLayout = ({ children }) => (
-  <div className=''>
+  <>
     <Header />
-    <div className=''>
+    <Container className="themed-container" fluid={true} style={{ backgroundColor: '#F4F4F4', minHeight: '600px', paddingTop: '10px' }}>
       {children}
-    </div>
-  </div>
+    </Container>
+  </>
 )
 PageLayout.propTypes = {
   children: PropTypes.node,

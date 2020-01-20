@@ -9,8 +9,10 @@ const ACTION_HANDLERS = {
     }
   },
   [actions.GET_JOB_BY_ID_SUCCESS]:(state, action) => {
+    console.log(action.payload.job)
     return {
       ...state,
+      job: action.payload.job,
       isLoading: false
     }
   },
@@ -24,7 +26,7 @@ const ACTION_HANDLERS = {
 
 const initialState = {
   isLoading : false,
-  job:[]
+  job:{}
 }
 
 const reducer = (state = initialState, action) => {
