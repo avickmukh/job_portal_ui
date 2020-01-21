@@ -6,19 +6,17 @@ import { getJobByIdSuccess, getJobByIdError } from './actions'
 
 export function * getJobById (action) {
   try {
-        const response = yield getDataAsync()
-        if (response.success) {
-          const job = getJobDetailById(response.data, action.payload.jobId)
-          console.log(response.data, action.payload.jobId)
-          if(job.length > 0) {
-            yield put(getJobByIdSuccess(job[0]))
-          }
-          else{
-            yield put(getJobByIdError('There is no data'))
-          }
-        } else {
-          yield put(getJobByIdError('There is no data'))
-        }
+    const response = yield getDataAsync()
+    if (response.success) {
+      const job = getJobDetailById(response.data, action.payload.jobId)
+      if (job.length > 0) {
+        yield put(getJobByIdSuccess(job[0]))
+      } else {
+        yield put(getJobByIdError('There is no data'))
+      }
+    } else {
+      yield put(getJobByIdError('There is no data'))
+    }
   } catch (ex) {
     yield put(getJobByIdError(ex.message))
   }

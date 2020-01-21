@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import '!style-loader!css-loader!bootstrap/dist/css/bootstrap.css';
+import '!style-loader!css-loader!bootstrap/dist/css/bootstrap.css'
+import 'react-notifications/lib/notifications.css'
 import { createStore } from './store/createStore'
 // Store Initialization
 // ------------------------------------

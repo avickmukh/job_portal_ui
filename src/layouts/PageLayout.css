@@ -17,3 +17,14 @@
       border:none;
       margin-top:10px;
   }
+
+  .jobInfoClass{
+    padding: 5px;
+  }
+
+  .companyInfoClass{
+    padding: 5px;
+  }
+  .detailJob .nav{
+    cursor: pointer;
+  } 

@@ -1,11 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { Container, Row, Col, Card, CardTitle, CardText, Button,
-  CardSubtitle } from 'reactstrap'
-import { Link } from "react-router-dom";
+import { Container, Row } from 'reactstrap'
 import JobSearch from './jobSearch'
-import Styled from 'styled-components'
-import JobComponent from './JobComponent';
+import JobComponent from './JobComponent'
 
 class JobList extends Component {
 //   constructor(props){
@@ -16,27 +13,38 @@ class JobList extends Component {
     this.props.getJobList()
   }
 
+  componentWillUnMount () {
+    this.props.clean()
+  }
+
   render () {
-    const jobListView = this.props.jobs.map((job)=>{
-        return(<JobComponent job={job} />)
-    })
+    const jobListView = this.props.jobs.map((job) => <JobComponent key={job.id} job={job} />)
+    const initialSearchedVal = {
+      skill: '',
+      employment_type:''
+    }
     return (
-      <Container className="themed-container" fluid={true}>
+      <Container className='themed-container' fluid>
         <Row>
-          <JobSearch />
+          <JobSearch 
+            searchJob={this.props.searchJob} 
+            getJobList={this.props.getJobList}
+            initialValues={initialSearchedVal} />
         </Row>
         <Row>
-          <Container className="themed-container" fluid={true}>
-            { jobListView }
+          <Container className='themed-container' fluid>
+            {jobListView}
           </Container>
         </Row>
-  </Container>
+      </Container>
     )
   }
 }
 JobList.propTypes = {
   getJobList: PropTypes.func.isRequired,
-  jobs: PropTypes.array.isRequired
+  jobs: PropTypes.array.isRequired,
+  clean:PropTypes.func.isRequired,
+  searchJob: PropTypes.func.isRequired,
 }
 
 export default JobList

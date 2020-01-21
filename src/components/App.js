@@ -2,10 +2,10 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import PropTypes from 'prop-types'
-import 'react-notifications/lib/notifications.css';
-import 'font-awesome/css/font-awesome.min.css';
+import 'react-notifications/lib/notifications.css'
+import 'font-awesome/css/font-awesome.min.css'
 
-import asyncComponent from './AsyncComponent';
+import asyncComponent from './AsyncComponent'
 
 class App extends React.Component {
   static propTypes = {
@@ -18,30 +18,29 @@ class App extends React.Component {
   }
 
   render () {
-    const { store, routes} = this.props
-    console.log(routes)
+    const { store, routes } = this.props
     const Routes = routes.map((childRoute, index) => {
       const RouteTemp = childRoute.route
       const ComponentComp = asyncComponent(RouteTemp.getComponent)
-      return (<Route 
-                path={RouteTemp.path} 
-                key={RouteTemp.path}
-                exact 
-                render={props => (
-                  <childRoute.component>
-                    <ComponentComp {...props}/>
-                  </childRoute.component>
-                )}
-                />)
+      return (<Route
+        path={RouteTemp.path}
+        key={RouteTemp.path}
+        exact
+        render={props => (
+          <childRoute.component>
+            <ComponentComp {...props} />
+          </childRoute.component>
+        )}
+      />)
     })
 
     return (
       <Provider store={store}>
         <Router>
           <Switch>
-              {Routes}
+            {Routes}
           </Switch>
-        </Router>        
+        </Router>
       </Provider>
     )
   }

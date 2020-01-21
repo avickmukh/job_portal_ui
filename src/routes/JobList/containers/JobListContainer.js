@@ -1,10 +1,12 @@
 import { connect } from 'react-redux'
-import { getJobList } from '../actions'
+import { getJobList, clean, searchJob } from '../actions'
 
 import JobList from '../components/JobList'
 
 const mapDispatchToProps = {
-  getJobList
+  getJobList,
+  clean,
+  searchJob
 }
 
 const mapStateToProps = (state) => ({

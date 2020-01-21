@@ -1,5 +1,5 @@
 import * as actions from './constants'
-
+import getSearchedJobs from './utils'
 const ACTION_HANDLERS = {
   [actions.GET_JOB_LIST]:state => ({
     ...state,
@@ -15,6 +15,20 @@ const ACTION_HANDLERS = {
   [actions.GET_JOB_LIST_ERROR]:(state, action) => {
     return {
       ...state,
+      isLoading: false
+    }
+  },
+  [actions.SEARCH_JOB_SUCCESS]:(state, action) => {
+    return {
+      ...state,
+      jobs:action.payload.jobs,
+      isLoading: false
+    }
+  },
+  [actions.CLEAN]:(state) => {
+    return {
+      ...state,
+      jobs:[],
       isLoading: false
     }
   }

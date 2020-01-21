@@ -7,7 +7,7 @@ import PropTypes from 'prop-types'
 export const NotFoundLayout = ({ children }) => (
   <Container className='notfound-component'>
     <Row>
-        {children}      
+      {children}
     </Row>
   </Container>
 )

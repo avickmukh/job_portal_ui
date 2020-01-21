@@ -1,17 +1,16 @@
 import React, { Component } from 'react'
 
-
 class NotFound extends Component {
-  
-  constructor(props){
+  constructor (props) {
     super(props)
   }
-  render(props){
-      return (
-        <h1>
+
+  render (props) {
+    return (
+      <h1>
          Not Found 404
-        </h1>
-      )
+      </h1>
+    )
   }
 }
 
