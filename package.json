@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "This is basic starter Kit setup with react webpack babel eslint",
   "main": "index.js",
-  "author": "",
+  "author": "Avick Mukherjee",
   "scripts": {
     "clean": "rimraf dist",
     "compile": "node build/scripts/compile",

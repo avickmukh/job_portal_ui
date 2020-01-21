@@ -83,21 +83,13 @@ const config = {
         ]
       },
       plugins: [
-        // new webpack.IgnorePlugin(/vertx/),
-        // new webpack.EnvironmentPlugin(['Docker_HOST', 'NODE_ENV']),
         new webpack.DefinePlugin(Object.assign({
           'process.env': { NODE_ENV: JSON.stringify(project.env) },
           __DEV__,
           __TEST__,
           __PROD__,
-        }, project.globals)),
-        // new webpack.ProvidePlugin({
-        //   logger: 'logger'
-        // })
-      ],
-    // devServer: {
-    //     contentBase: path.join(__dirname, 'public')
-    // }
+        }, project.globals))
+      ]
 };
 const miniCssExtractPlugin = new MiniCssExtractPlugin({
   filename: __DEV__ ? 'styles/[name].css' : 'styles/[name].[hash].css',
