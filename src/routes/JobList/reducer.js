@@ -1,9 +1,9 @@
 import * as actions from './constants'
-import getSearchedJobs from './utils'
+
 const ACTION_HANDLERS = {
   [actions.GET_JOB_LIST]:state => ({
     ...state,
-    ...initialState
+    isLoading: true
   }),
   [actions.GET_JOB_LIST_SUCCESS]:(state, action) => {
     return {
