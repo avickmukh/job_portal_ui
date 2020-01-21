@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Card, CardTitle, CardText, Col, Button } from 'reactstrap'
 import { NotificationManager} from 'react-notifications';
+import { Link } from 'react-router-dom'
 
 const JobInfo = (props) =>{
     const applyJob = () => {
@@ -15,6 +16,7 @@ const JobInfo = (props) =>{
               <CardText>Description : {props.job.description}</CardText>
               <CardText>Employment Type : {props.job.employment_type}</CardText>
               <Button color='primary' type="button" onClick={()=>applyJob()}>Apply</Button>
+              <Link to='/'>List of Jobs</Link>
             </Card>
           </Col>
     )
