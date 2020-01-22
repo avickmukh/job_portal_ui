@@ -3,7 +3,7 @@ import { put, takeLatest } from 'redux-saga/effects'
 import { getJobListSuccess, getJobListError, searchJobSuccess, searchJobError } from './actions'
 import { getDataAsync } from '../../apis/dataQuery'
 
-import { GET_JOB_LIST, SEARCH_JOB  } from './constants'
+import { GET_JOB_LIST, SEARCH_JOB } from './constants'
 import getSearchedJobs from './utils'
 
 export function * getJobList (action) {

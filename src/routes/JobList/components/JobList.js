@@ -26,10 +26,11 @@ class JobList extends Component {
     return (
       <Container className='themed-container' fluid>
         <Row>
-          <JobSearch 
-            searchJob={this.props.searchJob} 
+          <JobSearch
+            searchJob={this.props.searchJob}
             getJobList={this.props.getJobList}
-            initialValues={initialSearchedVal} />
+            initialValues={initialSearchedVal}
+          />
         </Row>
         <Row>
           <Container className='themed-container' fluid>

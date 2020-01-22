@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row } from 'reactstrap'
 import classnames from 'classnames'
-import CompanyDetail from './CompanyDetail';
+import CompanyDetail from './CompanyDetail'
 import JobInfo from './JobInfo'
 
 const JobDetail = (props) => {
@@ -38,13 +38,13 @@ const JobDetail = (props) => {
       </Nav>
       <TabContent activeTab={activeTab}>
         <TabPane tabId='job_tab'>
-        <Row>
-        { props.job.id && <JobInfo job={props.job} /> }
-        </Row>
+          <Row>
+            {props.job.id && <JobInfo job={props.job} />}
+          </Row>
         </TabPane>
         <TabPane tabId='company_tab'>
           <Row>
-          { props.job.id && <CompanyDetail job={props.job} /> }
+            {props.job.id && <CompanyDetail job={props.job} />}
           </Row>
         </TabPane>
       </TabContent>

@@ -10,11 +10,11 @@ background: lightgray;
 text-align: right;
 `
 const JobSearch = props => {
-  const searchJob = (data) =>{
+  const searchJob = (data) => {
     props.searchJob(data)
   }
-  const resetData = () =>{
-    props.reset();
+  const resetData = () => {
+    props.reset()
     props.getJobList()
   }
   const { handleSubmit, pristine, submitting } = props
@@ -58,6 +58,7 @@ JobSearch.propTypes = {
   pristine: PropTypes.bool.isRequired,
   submitting: PropTypes.bool.isRequired,
   handleSubmit:  PropTypes.func.isRequired,
+  reset:PropTypes.func.isRequired,
 }
 
 export default reduxForm({

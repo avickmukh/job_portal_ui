@@ -1,7 +1,7 @@
 {
-  "name": "react_starter_Webpack_babel_eslint",
+  "name": "react_my_dream_job",
   "version": "1.0.0",
-  "description": "This is basic starter Kit setup with react webpack babel eslint",
+  "description": "This is a simple react js site",
   "main": "index.js",
   "author": "Avick Mukherjee",
   "scripts": {

@@ -1,6 +1,5 @@
 import React from 'react'
-import { IndexLink, Link } from 'react-router'
-import { Container, Row, Col } from 'reactstrap'
+import { Container, Row } from 'reactstrap'
 import './NotFoundLayout.css'
 import PropTypes from 'prop-types'
 
