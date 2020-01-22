@@ -45,7 +45,10 @@ React js , Redux, node js, webpack , babel , eslint, mocha, karma
    Please install node js in your system https://nodejs.org/en/
    
 # Cloning and Running the Application in local
+    Clone the project into local
 
+    Install all the npm packages. Go into the project folder and type the following command to install all npm packages
+    
     1. npm install
 
     2. npm start
@@ -71,10 +74,7 @@ React js , Redux, node js, webpack , babel , eslint, mocha, karma
 
    I am building same application without redux with only context api and react hooks ( https://github.com/avickmukh/React_Hooks )
 
-# Note
-  
-  I used React class component as well as functional component. I used react hooks as well as class life cycle methods. Also I used styled component and reactstrap for the design.
-  
+
 # Assumptions 
    1. For now I am reading the static data from json file from Redux-saga api call
         {
@@ -92,7 +92,7 @@ React js , Redux, node js, webpack , babel , eslint, mocha, karma
             }
         }
   # Resources
-    # React Js : Refer to https://reactjs.org/ to understand the concepts of ReactJS
+    # React Js : Refer to (https://reactjs.org/) to understand the concepts of ReactJS
     # create-react-app : The following link has all the commands that can be used with 
     create-react-app https://github.com/facebook/create-react-app
     # Redux : Refer to https://redux.js.org/introduction/getting-started to understand 
