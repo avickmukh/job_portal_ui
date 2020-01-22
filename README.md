@@ -9,6 +9,16 @@ Live Demo: http://mydreamjob.appexwebsolutions.com/joblist
 
 React js , Redux, node js, webpack , babel , eslint, mocha, karma
 
+    react : 16.12.0,
+    redux: 4.0.5
+    redux-saga: 1.1.3
+    webpack:  4.41.5
+    mocha: 7.0.0
+    chai: 4.2.0
+    @babel/core:  7.8.3
+    karma: 4.4.1
+    node 12.41.1
+
 ## To Run the project execute following commands in sequence
 
     1. npm install
@@ -57,7 +67,7 @@ React js , Redux, node js, webpack , babel , eslint, mocha, karma
                 "founded": "2015"
             }
         }
-    ```json
+   
       
 
 
