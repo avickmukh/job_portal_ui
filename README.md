@@ -92,7 +92,7 @@ React js , Redux, node js, webpack , babel , eslint, mocha, karma
             }
         }
   # Resources
-    # React Js : Refer to (https://reactjs.org/) to understand the concepts of ReactJS
+    # React Js : Refer to `[link](https://reactjs.org/)` to understand the concepts of ReactJS
     # create-react-app : The following link has all the commands that can be used with 
     create-react-app https://github.com/facebook/create-react-app
     # Redux : Refer to https://redux.js.org/introduction/getting-started to understand 
