@@ -1,7 +1,10 @@
-# My Dream Job Application
+# REACT JS PROJECT - MY DREAM JOB APPLICATION
 
 It is a simple Job Portal where you can search jobs and you can view the details of that job. The 
 Application build on the latest version of all thechbolgies. It is a responsive design.
+
+# Use of this Repo
+
 
 # Live Application URL
 
@@ -22,8 +25,12 @@ React js , Redux, node js, webpack , babel , eslint, mocha, karma
     @babel/core:  7.8.3
     karma: 4.4.1
     node 12.41.1
+    
+# Prerequisites
 
-## To run the project execute following commands in sequence
+   Please install node js in your system https://nodejs.org/en/
+   
+# Cloning and Running the Application in local
 
     1. npm install
 
@@ -33,7 +40,7 @@ React js , Redux, node js, webpack , babel , eslint, mocha, karma
 
     direct it will run : http://localhost:3000
 
-## To run the test cases you can run 
+# To run the test cases you can run 
      
      npm run test
      
@@ -72,8 +79,10 @@ React js , Redux, node js, webpack , babel , eslint, mocha, karma
         }
   # Resources
     # React Js : Refer to https://reactjs.org/ to understand the concepts of ReactJS
-    # create-react-app : The following link has all the commands that can be used with create-react-app https://github.com/facebook/create-react-app
-    # Redux : Refer to https://redux.js.org/introduction/getting-started to understand the concepts of Redux
+    # create-react-app : The following link has all the commands that can be used with 
+    create-react-app https://github.com/facebook/create-react-app
+    # Redux : Refer to https://redux.js.org/introduction/getting-started to understand 
+    the concepts of Redux
     
   # Contributing
    Feel free to open issues and pull requests!
