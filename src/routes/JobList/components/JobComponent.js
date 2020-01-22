@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import PropTypes from 'prop-types'
 import { Row, Col, Card, CardTitle, CardText, CardSubtitle } from 'reactstrap'
 import { Link } from 'react-router-dom'
@@ -24,4 +24,4 @@ const JobComponent = (props) => {
 JobComponent.propTypes = {
   job: PropTypes.object.isRequired
 }
-export default JobComponent
+export default memo(JobComponent)
