@@ -1,11 +1,11 @@
 # REACT JS PROJECT - MY DREAM JOB
 
-It is a Job Portal where users can search, view details and apply for jobs. 
+It is a job portal where users can search, view details and apply for jobs. 
 The design is responsive.
 
-# Use of this Repo
+# Use of this repository
 
-This Project is a Simple ReactJS Project which demonstrates the following
+This project is a simple ReactJS project which demonstrates the following:
 
 1. Creating a Component in React
 2. Making HTTP calls with fetch
@@ -44,7 +44,8 @@ React js , Redux, node js, webpack , babel , eslint, mocha, karma
 
    Please install node js in your system https://nodejs.org/en/
    
-# Cloning and Running the Application in local
+# Cloning and Running the application in local
+
     Clone the project into local
 
     Install all the npm packages. Go into the project folder and type the following command to install all npm packages
@@ -102,8 +103,8 @@ React js , Redux, node js, webpack , babel , eslint, mocha, karma
         
   # Resources
   Resources for reference:--  
-    React Js : Refer to https://reactjs.org/ to understand the concepts of ReactJS
-    create-react-app : The following link has all the commands that can be used with create-react-app                   https://github.com/facebook/create-react-app
+    React Js : Refer to https://reactjs.org/ to understand the concepts of ReactJS                                                        
+    create-react-app : The following link has all the commands that can be used with create-react-app                   https://github.com/facebook/create-react-app                                                                                              
     Redux : Refer to https://redux.js.org/introduction/getting-started to understand 
     the concepts of Redux
     
