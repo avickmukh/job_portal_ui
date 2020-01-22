@@ -83,7 +83,8 @@ React js , Redux, node js, webpack , babel , eslint, mocha, karma
 
 # Assumptions 
    1. For now I am reading the static data from json file from Redux-saga api call
-        {
+   ```json
+    {
             "id": 1,
             "title": "Frontend Developer",
             "location": "Bangalore",
@@ -97,6 +98,8 @@ React js , Redux, node js, webpack , babel , eslint, mocha, karma
                 "founded": "2015"
             }
         }
+```
+        
   # Resources
   Resources for reference:--  
     React Js : Refer to https://reactjs.org/ to understand the concepts of ReactJS
