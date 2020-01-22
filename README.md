@@ -1,10 +1,24 @@
-# REACT JS PROJECT - MY DREAM JOB APPLICATION
+# REACT JS PROJECT - MY DREAM JOB
 
-It is a simple Job Portal where you can search jobs and you can view the details of that job. The 
-Application build on the latest version of all thechbolgies. It is a responsive design.
+It is a Job Portal where users can search, view details and apply for jobs. 
+The design is responsive.
 
 # Use of this Repo
 
+This Project is a Simple ReactJS Project which demonstrates the following
+
+1. Creating a Component in React
+2. Making HTTP calls with fetch
+3. Communicating between parent and child component
+4. Using Bootstrap along with React (ReactStrap)
+5. Using Routing in React with Reat Router dom.
+6. Integrating redux with react
+7. Using Saga as middleware
+8. Using React hooks like useState, useEffect
+9. Using styled component
+10. Unit test cases using karma, Mocha and chai
+11. Maintaining code standards using Eslint
+12. Creating production build using webpack.
 
 # Live Application URL
 
@@ -40,7 +54,7 @@ React js , Redux, node js, webpack , babel , eslint, mocha, karma
 
     direct it will run : http://localhost:3000
 
-# To run the test cases you can run 
+# To run the unit test cases you can run 
      
      npm run test
      
