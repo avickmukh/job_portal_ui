@@ -38,7 +38,7 @@ React js , Redux, node js, webpack , babel , eslint, mocha, karma
     chai: 4.2.0
     @babel/core:  7.8.3
     karma: 4.4.1
-    node 12.41.1
+    node 10.x
     
 # Prerequisites
 
