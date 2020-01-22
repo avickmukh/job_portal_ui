@@ -5,9 +5,6 @@ import JobSearch from './jobSearch'
 import JobComponent from './JobComponent'
 
 class JobList extends Component {
-//   constructor(props){
-//     super(props)
-//   }
 
   componentDidMount () {
     this.props.getJobList()
