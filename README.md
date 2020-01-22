@@ -3,9 +3,13 @@
 It is a simple Job Portal where you can search jobs and you can view the details of that job. The 
 Application build on the latest version of all thechbolgies. It is a responsive design.
 
-Live Demo: http://mydreamjob.appexwebsolutions.com/joblist
+# Live Application URL
 
-# Technology Used in this project
+The Application is deployed in http://mydreamjob.appexwebsolutions.com/joblist
+
+Click on the link to see the application
+
+# Technology used in this project
 
 React js , Redux, node js, webpack , babel , eslint, mocha, karma
 
@@ -19,7 +23,7 @@ React js , Redux, node js, webpack , babel , eslint, mocha, karma
     karma: 4.4.1
     node 12.41.1
 
-## To Run the project execute following commands in sequence
+## To run the project execute following commands in sequence
 
     1. npm install
 
@@ -29,7 +33,7 @@ React js , Redux, node js, webpack , babel , eslint, mocha, karma
 
     direct it will run : http://localhost:3000
 
-## To Run the test cases you can run 
+## To run the test cases you can run 
      
      npm run test
      
@@ -52,7 +56,6 @@ React js , Redux, node js, webpack , babel , eslint, mocha, karma
   
 # Assumptions 
    1. For now I am reading the static data from json file from Redux-saga api call
-   ```json
         {
             "id": 1,
             "title": "Frontend Developer",
@@ -67,7 +70,15 @@ React js , Redux, node js, webpack , babel , eslint, mocha, karma
                 "founded": "2015"
             }
         }
-   
+  # Resources
+    # React Js : Refer to https://reactjs.org/ to understand the concepts of ReactJS
+    # create-react-app : The following link has all the commands that can be used with create-react-app https://github.com/facebook/create-react-app
+    # Redux : Refer to https://redux.js.org/introduction/getting-started to understand the concepts of Redux
+    
+  # Contributing
+   Feel free to open issues and pull requests!
+
+
       
 
 
