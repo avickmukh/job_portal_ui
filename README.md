@@ -23,7 +23,7 @@ This Project is a Simple ReactJS Project which demonstrates the following
 # Live Application URL
 
 The Application is deployed in http://mydreamjob.appexwebsolutions.com/joblist
-https://reactjs.org/
+
 Click on the link to see the application
 
 # Technology used in this project
@@ -92,7 +92,7 @@ React js , Redux, node js, webpack , babel , eslint, mocha, karma
             }
         }
   # Resources
-  https://reactjs.org/
+  Below are resources for reference:
     # React Js : Refer to https://reactjs.org/ to understand the concepts of ReactJS
     # create-react-app : The following link has all the commands that can be used with 
     create-react-app https://github.com/facebook/create-react-app
