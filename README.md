@@ -53,26 +53,32 @@ React js , Redux, node js, webpack , babel , eslint, mocha, karma
 
     2. npm start
 
-    it will run on 3000 port, if you want to change the port you can change it on build/scripts/start.js file
+    This application will run on 3000 port, if you want to change the port you can change it in build/scripts/start.js file.
 
-    direct it will run : http://localhost:3000
+    By default it will run here: http://localhost:3000
 
 # To run the unit test cases you can run 
      
      npm run test
      
-# In Progress work List
-
-   1. Integrate with backend services ( https://github.com/avickmukh/job_portal_service )
-   2. Pagination in Joblist
-   3. Writting more test cases and adding code coverage
-   4. Adding Authorization so user can apply the job 
-   5. Adding more validation
-   6. Adding error boundary
+# To run the eslint and check the error 
+     
+     npm run lint
+     
+     To fix the errors:-
+     
+     npm run lint --fix
+     
+# To run the prod build 
+     
+     npm run build  
 
 # Others
 
-   I am building same application without redux with only context api and react hooks ( https://github.com/avickmukh/React_Hooks )
+   If you want to check the same application's implementation without using redux for state management then try this link:  https://github.com/avickmukh/React_Hooks 
+   I am using react hooks and context APIs.
+   
+   (Under development)
 
 
 # Assumptions 
@@ -92,17 +98,23 @@ React js , Redux, node js, webpack , babel , eslint, mocha, karma
             }
         }
   # Resources
-  Below are resources for reference:
-    # React Js : Refer to https://reactjs.org/ to understand the concepts of ReactJS
-    # create-react-app : The following link has all the commands that can be used with 
-    create-react-app https://github.com/facebook/create-react-app
-    # Redux : Refer to https://redux.js.org/introduction/getting-started to understand 
+  Resources for reference:--  
+    React Js : Refer to https://reactjs.org/ to understand the concepts of ReactJS
+    create-react-app : The following link has all the commands that can be used with create-react-app                   https://github.com/facebook/create-react-app
+    Redux : Refer to https://redux.js.org/introduction/getting-started to understand 
     the concepts of Redux
     
   # Contributing
    Feel free to open issues and pull requests!
 
+# In Progress work List
 
+   1. Integrate with backend services ( https://github.com/avickmukh/job_portal_service )
+   2. Pagination in Joblist
+   3. Writting more test cases and adding code coverage
+   4. Adding Authorization so user can apply the job 
+   5. Adding more validation
+   6. Adding error boundary
       
 
 
