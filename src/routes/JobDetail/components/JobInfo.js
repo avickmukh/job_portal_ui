@@ -16,7 +16,7 @@ const JobInfo = (props) => {
         <CardText>Description : {props.job.description}</CardText>
         <CardText>Employment Type : {props.job.employment_type}</CardText>
         <Button color='primary' type='button' onClick={() => applyJob()}>Apply</Button>
-        <Link to='/joblist'>List of Jobs</Link>
+        <Link to='/'>List of Jobs</Link>
       </Card>
     </Col>
   )
