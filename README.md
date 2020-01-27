@@ -22,7 +22,7 @@ This project is a simple ReactJS project which demonstrates the following:
 
 # Live Application URL
 
-The Application is deployed in http://mydreamjob.appexwebsolutions.com/joblist
+The Application is deployed in http://mydreamjob.appexwebsolutions.com/
 
 Click on the link to see the application
 
