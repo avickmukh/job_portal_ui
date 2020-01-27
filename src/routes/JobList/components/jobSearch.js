@@ -9,6 +9,10 @@ padding: 20px;
 background: lightgray; 
 text-align: right;
 `
+const SearchBtn = styled(Button)`
+margin-right:5px;
+margin-left:5px;
+`
 const JobSearch = props => {
   const searchJob = (data) => {
     props.searchJob(data)
@@ -41,7 +45,7 @@ const JobSearch = props => {
                   <option value='contract'>Contract</option>
                 </Field>
               </FormGroup>
-              <Button type='submit' disabled={pristine || submitting}>Search</Button>
+              <SearchBtn type='submit' disabled={pristine || submitting}>Search</SearchBtn>
               <Button type='button' onClick={resetData}>Reset</Button>
             </form>
           </StyledCard>
